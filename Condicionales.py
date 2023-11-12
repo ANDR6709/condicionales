@@ -1,18 +1,21 @@
 
-#Ejercicio 2: Clasificación de Edades
+#Ejercicio 3: Calculadora de Descuento
 
-#Crea un programa que pida al usuario su edad y, según la edad proporcionada, muestre uno de los siguientes mensajes:
-#Si la edad es menor de 18 años: "Eres menor de edad."
-#Si la edad está entre 18 y 65 años (incluidos): "Eres un adulto."
-#Si la edad es mayor de 65 años: "Eres un adulto mayor."
+#Pide al usuario que ingrese el precio de un producto y su edad. Si el usuario tiene menos de 18 
+#años, aplica un 10% de descuento al precio del producto. Si el usuario tiene 65 años o más, aplica 
+#un 15% de descuento. En otros casos, no se aplica ningún descuento. Muestra el precio final 
+#después del descuento.
 
 
+precio=int(input("ingrese el precio"))
 edad=int(input("ingrese la edad"))
-if edad <18:
-    print("eres menor de edad")
-    if edad >18 and 65:
-        print("eres un adulto")
-    else:
-        if edad >65:
-            print("eres un adulto mayor")
-            
+if edad < 18:
+    total_a_pagar=precio *0.9
+    print("se aplica descuento",total_a_pagar)
+elif edad >=65:
+    total_a_pagar= precio*0.85
+    print("se aplica descuento",total_a_pagar)
+else:
+    print("no aplica descuento",precio)
+    
+    
