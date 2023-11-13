@@ -1,18 +1,24 @@
+#Ejercicio 4: Clasificación de Notas
 
-#Ejercicio 2: Clasificación de Edades
+#Escribe un programa que solicite al usuario ingresar una puntuación (de 0 a 100) y luego muestre una calificación de acuerdo con la siguiente escala:
+#90-100: "A" (sobresaliente)
+#80-89: "B" (bueno)
+#70-79: "C" (satisfactorio)
+#60-69: "D" (necesita mejorar)
+#Menos de 60: "F" (reprobado)
 
-#Crea un programa que pida al usuario su edad y, según la edad proporcionada, muestre uno de los siguientes mensajes:
-#Si la edad es menor de 18 años: "Eres menor de edad."
-#Si la edad está entre 18 y 65 años (incluidos): "Eres un adulto."
-#Si la edad es mayor de 65 años: "Eres un adulto mayor."
+
+puntuacion=int(input("ingrese puntuacion de 0 a 100"))
+if puntuacion >= 90:
+    print("A -Sobresaliente")
+elif puntuacion >=80 and 89:
+    print("B-Bueno")
+elif puntuacion >=70 and   79:
+    print("C-Satisfactorio")
+elif puntuacion >=60 and  69:
+    print("D-Necesita mejorar")
+elif puntuacion < 60:
+    print("F-Reprobado")
+    
 
 
-edad=int(input("ingrese la edad"))
-if edad <18:
-    print("eres menor de edad")
-    if edad >18 and 65:
-        print("eres un adulto")
-    else:
-        if edad >65:
-            print("eres un adulto mayor")
-            
