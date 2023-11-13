@@ -1,21 +1,24 @@
+#Ejercicio 4: Clasificación de Notas
 
-#Ejercicio 3: Calculadora de Descuento
+#Escribe un programa que solicite al usuario ingresar una puntuación (de 0 a 100) y luego muestre una calificación de acuerdo con la siguiente escala:
+#90-100: "A" (sobresaliente)
+#80-89: "B" (bueno)
+#70-79: "C" (satisfactorio)
+#60-69: "D" (necesita mejorar)
+#Menos de 60: "F" (reprobado)
 
-#Pide al usuario que ingrese el precio de un producto y su edad. Si el usuario tiene menos de 18 
-#años, aplica un 10% de descuento al precio del producto. Si el usuario tiene 65 años o más, aplica 
-#un 15% de descuento. En otros casos, no se aplica ningún descuento. Muestra el precio final 
-#después del descuento.
 
-
-precio=int(input("ingrese el precio"))
-edad=int(input("ingrese la edad"))
-if edad < 18:
-    total_a_pagar=precio *0.9
-    print("se aplica descuento",total_a_pagar)
-elif edad >=65:
-    total_a_pagar= precio*0.85
-    print("se aplica descuento",total_a_pagar)
-else:
-    print("no aplica descuento",precio)
+puntuacion=int(input("ingrese puntuacion de 0 a 100"))
+if puntuacion >= 90:
+    print("A -Sobresaliente")
+elif puntuacion >=80 and 89:
+    print("B-Bueno")
+elif puntuacion >=70 and   79:
+    print("C-Satisfactorio")
+elif puntuacion >=60 and  69:
+    print("D-Necesita mejorar")
+elif puntuacion < 60:
+    print("F-Reprobado")
     
-    
+
+
